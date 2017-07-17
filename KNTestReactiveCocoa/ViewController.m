@@ -7,14 +7,11 @@
 //
 
 #import "ViewController.h"
-//@class RACSignal;
 //#import "ReactiveCocoa.h"
 
 //@import ReactiveCocoa;
-//@import ReactiveCocoa;
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
-//#import "RACSignal.h"
 
 @interface ViewController ()
 
