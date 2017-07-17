@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6C399A80ABEA5D3EB9C4AF /* Pods_KNTestReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E13463F62CD5E34526A50B1 /* Pods_KNTestReactiveCocoa.framework */; };
 		E1583A6B1F1C625E00962538 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1583A6A1F1C625E00962538 /* main.m */; };
 		E1583A6E1F1C625E00962538 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1583A6D1F1C625E00962538 /* AppDelegate.m */; };
 		E1583A711F1C625E00962538 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1583A701F1C625E00962538 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E13463F62CD5E34526A50B1 /* Pods_KNTestReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KNTestReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6AA60DB1CCC39C530EBCB4 /* Pods-KNTestReactiveCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNTestReactiveCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNTestReactiveCocoa/Pods-KNTestReactiveCocoa.debug.xcconfig"; sourceTree = "<group>"; };
+		936AC139DFBABF932B8EDF6E /* Pods-KNTestReactiveCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNTestReactiveCocoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNTestReactiveCocoa/Pods-KNTestReactiveCocoa.release.xcconfig"; sourceTree = "<group>"; };
 		E1583A661F1C625E00962538 /* KNTestReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNTestReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1583A6A1F1C625E00962538 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1583A6C1F1C625E00962538 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		E1583A751F1C625E00962538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1583A781F1C625E00962538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1583A7A1F1C625E00962538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E17D043A1F1C6AA0005D591C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "Pods/../build/Debug-iphoneos/ReactiveCocoa/ReactiveCocoa.framework"; sourceTree = "<group>"; };
+		E17D043C1F1C6AAC005D591C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Developer/Xcode/DerivedData/KNTestReactiveCocoa-gbdmdpwuwjhpjwawibxqceyandtp/Build/Products/Debug-iphonesimulator/Result/Result.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A6C399A80ABEA5D3EB9C4AF /* Pods_KNTestReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2744CA0BFE27AAED9DD7D2D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B6AA60DB1CCC39C530EBCB4 /* Pods-KNTestReactiveCocoa.debug.xcconfig */,
+				936AC139DFBABF932B8EDF6E /* Pods-KNTestReactiveCocoa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DBEDAEE619005DC479D50CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E17D043C1F1C6AAC005D591C /* Result.framework */,
+				E17D043A1F1C6AA0005D591C /* ReactiveCocoa.framework */,
+				0E13463F62CD5E34526A50B1 /* Pods_KNTestReactiveCocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1583A5D1F1C625E00962538 = {
 			isa = PBXGroup;
 			children = (
 				E1583A681F1C625E00962538 /* KNTestReactiveCocoa */,
 				E1583A671F1C625E00962538 /* Products */,
+				2744CA0BFE27AAED9DD7D2D3 /* Pods */,
+				6DBEDAEE619005DC479D50CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1583A7D1F1C625E00962538 /* Build configuration list for PBXNativeTarget "KNTestReactiveCocoa" */;
 			buildPhases = (
+				2A56D4572ED8DA8BB6E073A1 /* [CP] Check Pods Manifest.lock */,
 				E1583A621F1C625E00962538 /* Sources */,
 				E1583A631F1C625E00962538 /* Frameworks */,
 				E1583A641F1C625E00962538 /* Resources */,
+				D4B4BD98671557C66BEB247F /* [CP] Embed Pods Frameworks */,
+				A671696D1670DCD645A0252E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A56D4572ED8DA8BB6E073A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A671696D1670DCD645A0252E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KNTestReactiveCocoa/Pods-KNTestReactiveCocoa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B4BD98671557C66BEB247F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KNTestReactiveCocoa/Pods-KNTestReactiveCocoa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1583A621F1C625E00962538 /* Sources */ = {
@@ -271,9 +350,14 @@
 		};
 		E1583A7E1F1C625E00962538 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B6AA60DB1CCC39C530EBCB4 /* Pods-KNTestReactiveCocoa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FUV5KWMMAV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+				);
 				INFOPLIST_FILE = KNTestReactiveCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmcc.KNTestReactiveCocoa;
@@ -283,9 +367,14 @@
 		};
 		E1583A7F1F1C625E00962538 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 936AC139DFBABF932B8EDF6E /* Pods-KNTestReactiveCocoa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FUV5KWMMAV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ReactiveCocoa",
+				);
 				INFOPLIST_FILE = KNTestReactiveCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cmcc.KNTestReactiveCocoa;
@@ -312,6 +401,7 @@
 				E1583A7F1F1C625E00962538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
