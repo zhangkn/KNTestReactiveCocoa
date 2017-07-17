@@ -36,6 +36,10 @@
 
 }
 
+/**
+ RACSubject替换代理
+
+ */
 - (void)TestDelegateUsingRACSubject:(id)sender {
     
     // 创建第二个控制器
