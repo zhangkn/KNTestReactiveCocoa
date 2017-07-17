@@ -14,6 +14,9 @@
 		E1583A741F1C625E00962538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1583A721F1C625E00962538 /* Main.storyboard */; };
 		E1583A761F1C625E00962538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1583A751F1C625E00962538 /* Assets.xcassets */; };
 		E1583A791F1C625E00962538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1583A771F1C625E00962538 /* LaunchScreen.storyboard */; };
+		E1C5B5281F1CACFD00FD0FB7 /* KNTestRACTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C5B5271F1CACFD00FD0FB7 /* KNTestRACTool.m */; };
+		E1C5B52C1F1CBBA700FD0FB7 /* KNTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C5B52A1F1CBBA700FD0FB7 /* KNTwoViewController.m */; };
+		E1C5B52D1F1CBBA700FD0FB7 /* KNTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C5B52B1F1CBBA700FD0FB7 /* KNTwoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		E1583A7A1F1C625E00962538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E17D043A1F1C6AA0005D591C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "Pods/../build/Debug-iphoneos/ReactiveCocoa/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		E17D043C1F1C6AAC005D591C /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Developer/Xcode/DerivedData/KNTestReactiveCocoa-gbdmdpwuwjhpjwawibxqceyandtp/Build/Products/Debug-iphonesimulator/Result/Result.framework"; sourceTree = "<group>"; };
+		E1C5B5261F1CACFD00FD0FB7 /* KNTestRACTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTestRACTool.h; sourceTree = "<group>"; };
+		E1C5B5271F1CACFD00FD0FB7 /* KNTestRACTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTestRACTool.m; sourceTree = "<group>"; };
+		E1C5B5291F1CBBA700FD0FB7 /* KNTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTwoViewController.h; sourceTree = "<group>"; };
+		E1C5B52A1F1CBBA700FD0FB7 /* KNTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTwoViewController.m; sourceTree = "<group>"; };
+		E1C5B52B1F1CBBA700FD0FB7 /* KNTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNTwoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +94,8 @@
 		E1583A681F1C625E00962538 /* KNTestReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				E1583A6C1F1C625E00962538 /* AppDelegate.h */,
-				E1583A6D1F1C625E00962538 /* AppDelegate.m */,
-				E1583A6F1F1C625E00962538 /* ViewController.h */,
-				E1583A701F1C625E00962538 /* ViewController.m */,
-				E1583A721F1C625E00962538 /* Main.storyboard */,
-				E1583A751F1C625E00962538 /* Assets.xcassets */,
-				E1583A771F1C625E00962538 /* LaunchScreen.storyboard */,
-				E1583A7A1F1C625E00962538 /* Info.plist */,
+				E1C5B5251F1CACE100FD0FB7 /* Tool */,
+				E1C5B5241F1CACD200FD0FB7 /* VC  */,
 				E1583A691F1C625E00962538 /* Supporting Files */,
 			);
 			path = KNTestReactiveCocoa;
@@ -102,9 +104,36 @@
 		E1583A691F1C625E00962538 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1583A6C1F1C625E00962538 /* AppDelegate.h */,
+				E1583A6D1F1C625E00962538 /* AppDelegate.m */,
+				E1583A721F1C625E00962538 /* Main.storyboard */,
+				E1583A751F1C625E00962538 /* Assets.xcassets */,
+				E1583A771F1C625E00962538 /* LaunchScreen.storyboard */,
+				E1583A7A1F1C625E00962538 /* Info.plist */,
 				E1583A6A1F1C625E00962538 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1C5B5241F1CACD200FD0FB7 /* VC  */ = {
+			isa = PBXGroup;
+			children = (
+				E1583A6F1F1C625E00962538 /* ViewController.h */,
+				E1583A701F1C625E00962538 /* ViewController.m */,
+				E1C5B5291F1CBBA700FD0FB7 /* KNTwoViewController.h */,
+				E1C5B52A1F1CBBA700FD0FB7 /* KNTwoViewController.m */,
+				E1C5B52B1F1CBBA700FD0FB7 /* KNTwoViewController.xib */,
+			);
+			name = "VC ";
+			sourceTree = "<group>";
+		};
+		E1C5B5251F1CACE100FD0FB7 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E1C5B5261F1CACFD00FD0FB7 /* KNTestRACTool.h */,
+				E1C5B5271F1CACFD00FD0FB7 /* KNTestRACTool.m */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +165,7 @@
 		E1583A5E1F1C625E00962538 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KN;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = hisun;
 				TargetAttributes = {
@@ -171,6 +201,7 @@
 			files = (
 				E1583A791F1C625E00962538 /* LaunchScreen.storyboard in Resources */,
 				E1583A761F1C625E00962538 /* Assets.xcassets in Resources */,
+				E1C5B52D1F1CBBA700FD0FB7 /* KNTwoViewController.xib in Resources */,
 				E1583A741F1C625E00962538 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +264,8 @@
 				E1583A711F1C625E00962538 /* ViewController.m in Sources */,
 				E1583A6E1F1C625E00962538 /* AppDelegate.m in Sources */,
 				E1583A6B1F1C625E00962538 /* main.m in Sources */,
+				E1C5B52C1F1CBBA700FD0FB7 /* KNTwoViewController.m in Sources */,
+				E1C5B5281F1CACFD00FD0FB7 /* KNTestRACTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
