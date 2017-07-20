@@ -20,6 +20,8 @@
 		E1E074261F2042B9004BD5A1 /* HSFiendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E074231F2042B9004BD5A1 /* HSFiendsModel.m */; };
 		E1E074271F2042B9004BD5A1 /* HSFriendsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E074251F2042B9004BD5A1 /* HSFriendsGroup.m */; };
 		E1E074291F2042CA004BD5A1 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1E074281F2042CA004BD5A1 /* friends.plist */; };
+		E1E0742C1F205939004BD5A1 /* KNTestRACMethodTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0742B1F205939004BD5A1 /* KNTestRACMethodTool.m */; };
+		E1E0742F1F2083B2004BD5A1 /* KNTestRACMacroTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E0742E1F2083B2004BD5A1 /* KNTestRACMacroTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,10 @@
 		E1E074241F2042B9004BD5A1 /* HSFriendsGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFriendsGroup.h; sourceTree = "<group>"; };
 		E1E074251F2042B9004BD5A1 /* HSFriendsGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFriendsGroup.m; sourceTree = "<group>"; };
 		E1E074281F2042CA004BD5A1 /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		E1E0742A1F205939004BD5A1 /* KNTestRACMethodTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTestRACMethodTool.h; sourceTree = "<group>"; };
+		E1E0742B1F205939004BD5A1 /* KNTestRACMethodTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTestRACMethodTool.m; sourceTree = "<group>"; };
+		E1E0742D1F2083B2004BD5A1 /* KNTestRACMacroTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTestRACMacroTool.h; sourceTree = "<group>"; };
+		E1E0742E1F2083B2004BD5A1 /* KNTestRACMacroTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTestRACMacroTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,10 @@
 			children = (
 				E1C5B5261F1CACFD00FD0FB7 /* KNTestRACTool.h */,
 				E1C5B5271F1CACFD00FD0FB7 /* KNTestRACTool.m */,
+				E1E0742A1F205939004BD5A1 /* KNTestRACMethodTool.h */,
+				E1E0742B1F205939004BD5A1 /* KNTestRACMethodTool.m */,
+				E1E0742D1F2083B2004BD5A1 /* KNTestRACMacroTool.h */,
+				E1E0742E1F2083B2004BD5A1 /* KNTestRACMacroTool.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -289,6 +299,8 @@
 				E1583A6B1F1C625E00962538 /* main.m in Sources */,
 				E1C5B52C1F1CBBA700FD0FB7 /* KNTwoViewController.m in Sources */,
 				E1C5B5281F1CACFD00FD0FB7 /* KNTestRACTool.m in Sources */,
+				E1E0742F1F2083B2004BD5A1 /* KNTestRACMacroTool.m in Sources */,
+				E1E0742C1F205939004BD5A1 /* KNTestRACMethodTool.m in Sources */,
 				E1E074261F2042B9004BD5A1 /* HSFiendsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

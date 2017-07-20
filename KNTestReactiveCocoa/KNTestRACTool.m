@@ -8,6 +8,9 @@
 
 #import "KNTestRACTool.h"
 
+/**
+ 测试RAC的常用类
+ */
 @implementation KNTestRACTool
 
 

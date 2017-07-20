@@ -14,6 +14,8 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "KNTestRACTool.h"
+#import "KNTestRACMethodTool.h"
+
 
 @interface ViewController ()
 
@@ -30,7 +32,9 @@
 //    [KNTestRACTool testRACSequence];// 字典转模型
 //    RACCommand
 //    [KNTestRACTool testRACCommand];//RACCommand简单使用
-    [KNTestRACTool testRACMulticastConnection];
+//    [KNTestRACTool testRACMulticastConnection];
+    
+    
     
 }
 
