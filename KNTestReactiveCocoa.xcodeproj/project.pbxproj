@@ -17,6 +17,9 @@
 		E1C5B5281F1CACFD00FD0FB7 /* KNTestRACTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C5B5271F1CACFD00FD0FB7 /* KNTestRACTool.m */; };
 		E1C5B52C1F1CBBA700FD0FB7 /* KNTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C5B52A1F1CBBA700FD0FB7 /* KNTwoViewController.m */; };
 		E1C5B52D1F1CBBA700FD0FB7 /* KNTwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1C5B52B1F1CBBA700FD0FB7 /* KNTwoViewController.xib */; };
+		E1E074261F2042B9004BD5A1 /* HSFiendsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E074231F2042B9004BD5A1 /* HSFiendsModel.m */; };
+		E1E074271F2042B9004BD5A1 /* HSFriendsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E074251F2042B9004BD5A1 /* HSFriendsGroup.m */; };
+		E1E074291F2042CA004BD5A1 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1E074281F2042CA004BD5A1 /* friends.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,11 @@
 		E1C5B5291F1CBBA700FD0FB7 /* KNTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTwoViewController.h; sourceTree = "<group>"; };
 		E1C5B52A1F1CBBA700FD0FB7 /* KNTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTwoViewController.m; sourceTree = "<group>"; };
 		E1C5B52B1F1CBBA700FD0FB7 /* KNTwoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNTwoViewController.xib; sourceTree = "<group>"; };
+		E1E074221F2042B9004BD5A1 /* HSFiendsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFiendsModel.h; sourceTree = "<group>"; };
+		E1E074231F2042B9004BD5A1 /* HSFiendsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFiendsModel.m; sourceTree = "<group>"; };
+		E1E074241F2042B9004BD5A1 /* HSFriendsGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFriendsGroup.h; sourceTree = "<group>"; };
+		E1E074251F2042B9004BD5A1 /* HSFriendsGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFriendsGroup.m; sourceTree = "<group>"; };
+		E1E074281F2042CA004BD5A1 /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 		E1583A681F1C625E00962538 /* KNTestReactiveCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				E1E074211F20428F004BD5A1 /* model */,
 				E1C5B5251F1CACE100FD0FB7 /* Tool */,
 				E1C5B5241F1CACD200FD0FB7 /* VC  */,
 				E1583A691F1C625E00962538 /* Supporting Files */,
@@ -110,6 +119,7 @@
 				E1583A751F1C625E00962538 /* Assets.xcassets */,
 				E1583A771F1C625E00962538 /* LaunchScreen.storyboard */,
 				E1583A7A1F1C625E00962538 /* Info.plist */,
+				E1E074281F2042CA004BD5A1 /* friends.plist */,
 				E1583A6A1F1C625E00962538 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -134,6 +144,17 @@
 				E1C5B5271F1CACFD00FD0FB7 /* KNTestRACTool.m */,
 			);
 			name = Tool;
+			sourceTree = "<group>";
+		};
+		E1E074211F20428F004BD5A1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E1E074221F2042B9004BD5A1 /* HSFiendsModel.h */,
+				E1E074231F2042B9004BD5A1 /* HSFiendsModel.m */,
+				E1E074241F2042B9004BD5A1 /* HSFriendsGroup.h */,
+				E1E074251F2042B9004BD5A1 /* HSFriendsGroup.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +224,7 @@
 				E1583A761F1C625E00962538 /* Assets.xcassets in Resources */,
 				E1C5B52D1F1CBBA700FD0FB7 /* KNTwoViewController.xib in Resources */,
 				E1583A741F1C625E00962538 /* Main.storyboard in Resources */,
+				E1E074291F2042CA004BD5A1 /* friends.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +285,11 @@
 			files = (
 				E1583A711F1C625E00962538 /* ViewController.m in Sources */,
 				E1583A6E1F1C625E00962538 /* AppDelegate.m in Sources */,
+				E1E074271F2042B9004BD5A1 /* HSFriendsGroup.m in Sources */,
 				E1583A6B1F1C625E00962538 /* main.m in Sources */,
 				E1C5B52C1F1CBBA700FD0FB7 /* KNTwoViewController.m in Sources */,
 				E1C5B5281F1CACFD00FD0FB7 /* KNTestRACTool.m in Sources */,
+				E1E074261F2042B9004BD5A1 /* HSFiendsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
